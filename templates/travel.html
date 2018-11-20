@@ -1,14 +1,11 @@
 <html>
 
 <head>
-
-    <head>
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link href="static/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
+    <title>Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -28,16 +25,22 @@
             </div>
         </div>
     </nav>
-    <h1>Please login</h1>
-    <br>
-    <form action="" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input class="button" type="submit" value="Login">
-    </form>
-    {% if error %}
-    <p class="error"><strong>Error:</strong> {{ error }}
-        {% endif %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="title"> Take me for a walk.</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                email: fake@fake.com
+            </div>
+            <div class="col-sm">
+                phone: 867-5309
+            </div>
+            <div class="col-sm">
+                address: 7 Downing Street
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

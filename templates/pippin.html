@@ -1,14 +1,11 @@
 <html>
 
 <head>
-
-    <head>
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link href="static/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
+    <title>Pippin Approved</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -28,16 +25,16 @@
             </div>
         </div>
     </nav>
-    <h1>Please login</h1>
     <br>
-    <form action="" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input class="button" type="submit" value="Login">
-    </form>
-    {% if error %}
-    <p class="error"><strong>Error:</strong> {{ error }}
-        {% endif %}
+    <ul class="list-unstyled">
+        <li>Things Pippin Likes
+            <ul>
+                <li>Tennis Ball</li>
+                <li>Carrots</li>
+                <li>Kelowna City Park</li>
+                <li>My office in the innovation center</li>
+            </ul>
+        </li>
 </body>
 
 </html>

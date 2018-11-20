@@ -9,11 +9,22 @@ passwordKey = 'password'
 def index():
 	return render_template("index.html")
 
+@app.route('/pippin')
+def pippinFunc():
+	return render_template("pippin.html")
 
-@app.route("/page")
+@app.route('/travel')
+def travelFunc():
+	return render_template("travel.html")
+
+@app.route('/blog')
+def blogFunc():
+	return render_template("blog.html")
+
+@app.route("/fanpage")
 def page1():
 	if usernameKey in session:
-		return 'the good stuff' + usernameKey
+		return render_template("fanpage.html", user=usernameKey)
 	return abort(418)
 
 @app.route('/login', methods=['GET', 'POST'])

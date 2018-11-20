@@ -1,14 +1,11 @@
 <html>
 
 <head>
-
-    <head>
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link href="static/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
+    <title>Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -28,16 +25,16 @@
             </div>
         </div>
     </nav>
-    <h1>Please login</h1>
-    <br>
-    <form action="" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input class="button" type="submit" value="Login">
-    </form>
-    {% if error %}
-    <p class="error"><strong>Error:</strong> {{ error }}
-        {% endif %}
+    <div class="col-sm-9">
+        <h4><small>RECENT POSTS</small></h4>
+        <br>
+        <h2>What about breakfast?</h2>
+        <p>Pippin: We’ve had one, yes. What about second breakfast?<br>
+            Merry: I don’t think he knows about second breakfast, Pip.<br>
+            Pippin: What about elevenses? Luncheon? Afternoon tea? Dinner? Supper? He knows about them, doesn’t he?<br>
+            Merry: I wouldn’t count on it.</p>
+        <br>
+    </div>
 </body>
 
 </html>
